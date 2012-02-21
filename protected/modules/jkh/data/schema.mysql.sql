@@ -1,0 +1,17 @@
+CREATE TABLE `blg_jkh`
+(
+	`id`                BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title`             VARCHAR(128) NOT NULL,
+        `url`               VARCHAR(128) NOT NULL,
+	`text`              TEXT NOT NULL,
+	`tags`              TEXT,
+	`status`            INTEGER NOT NULL,
+        `pageTitle`         VARCHAR(250),
+        `pageKeywords`      VARCHAR(250),
+        `pageDescription`   VARCHAR(250),
+	`createTime`        BIGINT UNSIGNED,
+	`updateTime`        BIGINT UNSIGNED,
+        `anonceText`        text,
+        `image`             VARCHAR(255),
+    PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
